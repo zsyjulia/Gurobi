@@ -12,11 +12,11 @@ f = file ('make_output_dir.sh' , 'w')
 for s in list_scheduler:
     
     for g in list_gml:
-        print '\n--scheduler: ' + s + ' -gml: ' + g
+        #print '\n--scheduler: ' + s + ' -gml: ' + g
         
         for j in list_jobs:             
             f.write('mkdir -p ~/output/' + s+'/'+g+'/'+j+'\n'  )
-            print 'CTRL java -cp target/gaia_ctrl-jar-with-dependencies.jar gaiasim.GaiaSim -e -g data/gml/' + g + '.gml -j data/combined_traces_fb/' + j + '-' + g +'.txt -s ' + s + ' -o ' + '~/output/' + s+'/'+g+'/'+j + ' > ~/output/' + s+'/'+g+'/'+j+'/exec_log.txt'
+            print 'java -cp target/gaiasim-0.1.0-SNAPSHOT-jar-with-dependencies.jar gaiasim.GaiaSim -g data/gml/' + g + '.gml -j data/combined_traces_fb/' + j + '-' + g +'.txt -s ' + s + ' -o ' + '~/output/' + s+'/'+g+'/'+j + ' > ~/output/' + s+'/'+g+'/'+j+'/exec_log.txt'
 
     print
 
