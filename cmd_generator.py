@@ -7,7 +7,7 @@
 #list_jobs = ['BigBench', 'FB' , 'TPC-DS' , 'TPC-H']
 #list_gml = ['swan' , 'gb4' , 'ntt_new' , 'AttMpls']
 
-list_scheduler = ['baseline' , 'recursive-remain-flow']
+list_scheduler = ['recursive-remain-flow']
 list_gml = ['swan' , 'gb4']
 list_jobs = ['BigBench', 'FB' , 'TPC-DS' , 'TPC-H']
 
