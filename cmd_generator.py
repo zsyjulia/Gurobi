@@ -9,6 +9,7 @@
 
 list_scheduler = ['baseline' , 'recursive-remain-flow']
 list_gml = ['swan' , 'gb4']
+list_jobs = ['BigBench', 'FB' , 'TPC-DS' , 'TPC-H']
 
 f = file ('make_output_dir.sh' , 'w')
 
