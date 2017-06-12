@@ -3,7 +3,7 @@
 # generating the commands with the -e option
 # also writes an bash script that creates the output folders
 
-list_scheduler = ['baseline' , 'recursive-remain-flow']
+list_scheduler = ['baseline' , 'recursive-remain-flow', 'varys', 'multipath']
 list_jobs = ['BigBench', 'FB' , 'TPC-DS' , 'TPC-H']
 list_gml = ['swan']
 
